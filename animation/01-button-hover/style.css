@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   font-family: Arial, sans-serif;
+  
 }
 
 button {
@@ -16,4 +17,19 @@ button {
   font-size: 18px;
   padding: 16px 24px;
   text-align: center;
+    /* adding 'transition' propertory to indicate change  */
+  transition: transform .3s;
+  /* transition timing function to ease in and ease out of transition */
+  transition-timing-function: ease-in-out;
 }
+
+button:hover{
+  /* Use the transfrom transition to scale the property evenly*/
+  transform: scale(1.4)
+}
+
+
+
+/* hover is the transition. So when hovered over the button height and 
+width will grow over 2 seconds to the size indicated */
+
