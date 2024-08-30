@@ -27,6 +27,23 @@ ul.dropdown-menu li:hover {
 
 .visible {
   display: block;
+  /* expanding effect with the drop down menu */
+  animation: expand 500ms ease-in-out;
+  transform-origin: top;
 }
 
+/* keyframes command used for animation. Expand effect
+with designated y transofrmation to create a bounce effect */
+@keyframes expand {
+  0% {
+    transform: scaleY(0);
+  }
 
+  70% {
+    transform: scaleY(1.1);
+  }
+  
+  100% {
+    transform: scaleY(1);
+  }
+}
