@@ -17,6 +17,7 @@ body {
   justify-content: center;
 }
 
+
 button {
   padding: 20px;
   color: #ffffff;
@@ -31,15 +32,19 @@ button {
   background-color: white;
   border: 1px solid black;
   border-radius: 10px;
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
-  transform-origin: center;
+  transform-origin: top;
   transform: translate(-50%, -50%);
   pointer-events: none;
   opacity: 0%;
   text-align: center;
+  /* transform transition used with 'translate' to reposition element */
+  transition: transform .6s ease-in-out; opacity: 40% ease;
+  transform: translate(-50%,-200%);
 }
+
 
 .popup-modal p {
   margin-bottom: 24px;
@@ -56,6 +61,8 @@ button {
 .popup-modal.show {
   opacity: 100%;
   pointer-events: all;
+  /* when popup modal is shown it repositions to center */
+  transform: translate(-50%, -50%);
 }
 
 .backdrop.show {
