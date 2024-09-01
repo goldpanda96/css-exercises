@@ -1,0 +1,21 @@
+/* All odd numbers grouped in same class */
+.odd-numbers{
+background-color: #df5198;
+font-family: "Verdana", "Dejavu Sans", sans-serif;
+}
+
+/* IDs used for second third and fourth to adjust specific changes */
+#second{
+    color: #0000ff;
+    font-size: 36px;
+}
+
+#third{
+    font-size: 36px;
+}
+
+#fourth{
+    background-color: #afff60;
+    font-size: 24px;
+    font-weight: bold;
+}
